@@ -1,0 +1,39 @@
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [
+        {
+            "port": 4343,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "0e059fce-d6c8-4cc2-9e11-9efff358f8b9"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "xhttpSettings": {
+                    "path": "/xhttp",
+                    "xPaddingBytes": 1
+                }
+            }
+        }
+    ],
+    "dns": {
+        "servers": [
+            "https+local://9.9.9.9/dns-query"
+        ]
+    },
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {
+                "domainStrategy": "UseIPv4"
+            }
+        }
+    ]
+}
