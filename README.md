@@ -1,2 +1,2 @@
-# XHV2-Configs
+# De Prueba
 Configuraciones para XHV2 usando conexión directa y también Nginx
